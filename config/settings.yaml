@@ -1,0 +1,33 @@
+# config/settings.yaml
+
+# General settings
+project_name: "CityPulse"
+environment: "development"  # options: development, production
+
+# Dashboard settings
+dashboard:
+  theme: "light"
+  refresh_interval: 60  # in seconds
+  default_view: "Air Quality"
+
+# Logging settings
+logging:
+  level: "INFO"
+  log_to_file: true
+  log_file_path: "logs/citypulse.log"
+
+# API usage flags (future extension)
+api_sources:
+  use_live_air_quality_api: false
+  use_live_twitter_api: false
+  use_google_maps_api: false
+
+# Modeling settings
+modeling:
+  retrain_on_startup: false
+  cache_predictions: true
+
+# Developer flags
+dev:
+  enable_debug: true
+  show_test_buttons: false
